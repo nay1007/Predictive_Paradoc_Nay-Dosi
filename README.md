@@ -1,4 +1,4 @@
-# Predictive_Paradoc_Nay-Dosi
+# Predictive_Paradox_Nay-Dosi
 
 
 
