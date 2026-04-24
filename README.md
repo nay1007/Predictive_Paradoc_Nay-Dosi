@@ -43,8 +43,8 @@ $$MAPE = \frac{100\%}{n} \sum_{t=1}^{n} \left| \frac{Actual_t - Forecast_t}{Actu
 
 | Metric | Value |
 | :--- | :--- |
-| **Test MAPE (2024)** | **1.81%** |
-| **Model Accuracy** | **98.19%** |
+| **Test MAPE (2024)** | **1.84%** |
+| **Model Accuracy** | **98.16%** |
 
 ---
 
