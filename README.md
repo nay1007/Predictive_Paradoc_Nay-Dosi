@@ -17,7 +17,7 @@ To handle over 1,000 hours of missing data and extreme sensor outliers (spikes r
 2. **KNN Imputation (Multivariate Similarity):**
    For medium-sized gaps, K-Nearest Neighbors was utilized to find the most similar historical hours based on **Temperature** and **Relative Humidity**, preserving weather-driven demand spikes.
 3. **Seasonal & Economic Imputation:**
-   For large gaps, a seasonal profile (Month/Day/Hour) was reconstructed and adjusted by a yearly growth factor (GDP and Population) to reflect the increasing "floor" of energy consumption over the 9-year span.
+   For large gaps, a seasonal profile (Month/Day/Hour) was reconstructed and adjusted by a yearly growth factor (GDP and Population). The larger spans of missing data were handled by computing averages of the data of the months before and after to the missing island.
 
 ---
 
