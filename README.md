@@ -20,6 +20,12 @@ To handle over 1,000 hours of missing data and extreme sensor outliers (spikes r
    For large gaps, a seasonal profile (Month/Day/Hour) was reconstructed and adjusted by a yearly growth factor (GDP and Population). The larger spans of missing data were handled by computing averages of the data of the months before and after to the missing island.
 
 ---
+## An explanation of the specific temporal features :
+I have added features like cyclic encoding which make the model understand the cyclic aspects of time,day , date and year.
+I used the KNN strategy to fill the gaps where the data was missing so as to make it similar to its neigbours.
+Lag features have also been used so as to make the model understand the element of time like one hour ago , one day ago ....
+
+Rolling features like rolling averages , rolling std deviation and max that have been added were first taken into the features for the model training but the MAPE was around 2.8% due to those features hence i didnt consider them into the training and testing part
 
 ## 🚀 Feature Engineering
 To fulfill the requirement of predicting the **next hour's demand**, the model utilizes features strictly available up to the current hour ($T$):
